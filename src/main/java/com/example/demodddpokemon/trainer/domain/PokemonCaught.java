@@ -1,5 +1,8 @@
 package com.example.demodddpokemon.trainer.domain;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class PokemonCaught {
 
     private int number;

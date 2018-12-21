@@ -6,7 +6,9 @@ import me.sargunvohra.lib.pokekotlin.client.PokeApi;
 import me.sargunvohra.lib.pokekotlin.client.PokeApiClient;
 import me.sargunvohra.lib.pokekotlin.model.Name;
 import me.sargunvohra.lib.pokekotlin.model.PokemonSpecies;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PokeApiCall implements PokemonRepository {
     @Override
     public Pokemon findByNumber(int number) {

@@ -1,9 +1,18 @@
 package com.example.demodddpokemon.trainer.domain;
 
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Trainer {
 
+    @Id
     private String id;
+
     private int level;
+
+    @Embedded
     private Party party;
 
     public Trainer(String id) {

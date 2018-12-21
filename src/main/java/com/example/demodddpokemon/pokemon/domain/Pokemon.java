@@ -17,4 +17,20 @@ public class Pokemon {
     public boolean isCaught(final double calculatedCaptureRate, final int number) {
         return number < calculatedCaptureRate;
     }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSprites() {
+        return sprites;
+    }
+
+    public int getCaptureRate() {
+        return captureRate;
+    }
 }
